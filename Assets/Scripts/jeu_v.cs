@@ -16,13 +16,15 @@ public class jeu_v : MonoBehaviour
         
     }
 
+    int finalScore;
+
     // Update is called once per frame
     void Update()
     {
         
         compteurMetre = compteurMetre + multiplicateur * Time.deltaTime;
 
-        int finalScore = Mathf.FloorToInt(compteurMetre);
+        finalScore = Mathf.FloorToInt(compteurMetre);
         if (affichageMetres != null)
         { 
                 affichageMetres.text = finalScore + " mètres";
@@ -32,4 +34,19 @@ public class jeu_v : MonoBehaviour
 
 
     }
+
+    void Affichage(Text zoneTexte)
+    {
+        if (finalScore < 250)
+        {
+            zoneTexte.text = "Après avoir parcouru " + finalScore + " mètres, tu décides finalement de t'arrêter dans l'Au Delà, histoire jouer à la belote sur les nuages avec les oiseaux.";
+        }
+        else
+        {
+            zoneTexte.text = "Tu as décidé.e de profiter de ta mort pour aller visiter l'infini plutôt que l'Au-Delà, et après avoir parcouru " + finalScore + " mètres, tu profites de l'apesanteur et du vide spatial.";
+        }
+    }
+
 }
+
+

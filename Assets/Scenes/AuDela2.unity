@@ -481,7 +481,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393819128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 158759608}
@@ -489,8 +489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 53.46}
+  m_SizeDelta: {x: 368.98, y: 122.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393819130
 MonoBehaviour:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -514,20 +514,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_FontSize: 18
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tu as d\xE9cide de profiter de ta mort pour aller visiter l'infini plut\xF4t
-    que l'Au-Del\xE0, et apr\xE8s avoir parcouru ... m\xE8tres, tu profites de l'apesanteur
-    et du vide spatial."
+  m_Text: "Tu as d\xE9cid\xE9.e de profiter de ta mort pour aller visiter l'infini
+    plut\xF4t que l'Au-Del\xE0, et apr\xE8s avoir parcouru ... m\xE8tres, tu profites
+    de l'apesanteur et du vide spatial."
 --- !u!222 &1393819131
 CanvasRenderer:
   m_ObjectHideFlags: 0

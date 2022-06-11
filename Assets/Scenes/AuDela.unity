@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 454558761}
   - component: {fileID: 454558763}
   - component: {fileID: 454558762}
+  - component: {fileID: 454558764}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -305,8 +306,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 146.3}
-  m_SizeDelta: {x: 266.03, y: 71.7}
+  m_AnchoredPosition: {x: 34, y: 81.61}
+  m_SizeDelta: {x: 240.76, y: 163.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454558762
 MonoBehaviour:
@@ -330,10 +331,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 18
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -341,7 +342,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Apr\xE8s avoir parcouru ... m\xE8tres, tu d\xE9cide finalement de t'arr\xEAter
+  m_Text: "Apr\xE8s avoir parcouru ... m\xE8tres, tu d\xE9cides finalement de t'arr\xEAter
     dans l'Au Del\xE0, histoire jouer \xE0 la belote sur les nuages avec les oiseaux."
 --- !u!222 &454558763
 CanvasRenderer:
@@ -351,6 +352,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454558760}
   m_CullTransparentMesh: 1
+--- !u!114 &454558764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454558760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c557cbc939bde4f881d9d006a6205c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affichageMetres: {fileID: 0}
+  compteurMetre: 0
+  multiplicateur: 2
 --- !u!224 &659120882 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1483367713323140964, guid: e8d5df6415306684eb18a06a0f75d815, type: 3}
@@ -636,8 +652,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075941188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.23, y: -0.24, z: -5}
-  m_LocalScale: {x: 0.5884615, y: 0.5884615, z: 0.5884615}
+  m_LocalPosition: {x: -3.26, y: 0.4, z: -5}
+  m_LocalScale: {x: 0.8035158, y: 0.8035158, z: 0.8035158}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -715,11 +731,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1483367713323140964, guid: e8d5df6415306684eb18a06a0f75d815, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 81.455
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 1483367713323140964, guid: e8d5df6415306684eb18a06a0f75d815, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70.9
+      value: -29.575
       objectReference: {fileID: 0}
     - target: {fileID: 1483367713323140964, guid: e8d5df6415306684eb18a06a0f75d815, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

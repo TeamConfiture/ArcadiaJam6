@@ -25,7 +25,7 @@ public class MovingBackground : MonoBehaviour
 
         //jeu_script = cimetiere.GetComponent<multiplicateur>();
 
-        Vector2 new_pos = transform.position;
+        Vector3 new_pos = transform.position;
         new_pos.y -= Time.deltaTime * mult;
         transform.position = new_pos;
     }

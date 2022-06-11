@@ -12,7 +12,6 @@ public class MovingBonusMalus : MonoBehaviour
     private float temps = 0;
 
 
-
     /*public Camera cam = Camera.main;
     private float cHeight;
     private float cWidth;*/
@@ -26,30 +25,41 @@ public class MovingBonusMalus : MonoBehaviour
         //cWidth = cHeight * cam.aspect;
     }
 
-
+    
 
     // Update is called once per frame
     void Update()
     {
 
+        temps = +Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0))
+
+        if (temps > 5 )
         {
-
-            Debug.Log("Current Selected : " + mySystem.currentSelectedGameObject.name);
-            Debug.Log("tot");
+            Destroy(this.gameObject);
+            Vector2 newPos = transform.position;
+            newPos.x = 15;
+            newPos.y = 15;
+            transform.position = newPos;
         }
     }
 
     public void TestDestroy()
     {
-        Debug.Log("lal");
-        if (Input.GetMouseButtonDown(0))
+        Debug.Log("Clique");
+        if (mySystem.currentSelectedGameObject.name == "Bonus(Clone)")
+        {
+            
+        }
+        else
         {
 
-            Debug.Log("Current Selected : " + mySystem.currentSelectedGameObject.name);
         }
+        Destroy(mySystem.currentSelectedGameObject);
     }
-
+    void OnBecameInvisible()
+    {
+        Destroy(this.gameObject);
+    }
 
 }

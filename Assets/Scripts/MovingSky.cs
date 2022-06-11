@@ -10,7 +10,7 @@ public class MovingSky : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = 0.02f;
         pos.y = 27.29f;
-        pos.z = 10f;
+        pos.z = 40f;
 
         transform.position = pos;
     }
@@ -21,7 +21,7 @@ public class MovingSky : MonoBehaviour
 
         float mult = 2f;
 
-        Vector2 new_pos = transform.position;
+        Vector3 new_pos = transform.position;
         new_pos.y -= Time.deltaTime * 0.2f * mult;
         transform.position = new_pos;
     }
