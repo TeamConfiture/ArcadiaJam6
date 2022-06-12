@@ -20,15 +20,15 @@ public class RandomObjectSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float randNumber = Random.Range(0, 2000);
-        if (randNumber == 997 ||randNumber == 998)
+        float randNumber = Random.Range(0, 1000);
+        if (randNumber > 995 && randNumber < 997)
         {
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(-1*cWidth/2 +10 , cWidth/2 -10), Random.Range(-1 * cHeight / 2 -10, cHeight / 2 +10), -1200);
+            Vector3 randomSpawnPosition = new Vector3(Random.Range(-1*cWidth/2 +20 , cWidth/2 -20), Random.Range(-1 * cHeight / 2 +10, cHeight / 2 -10), -1200);
 
             GameObject newBonus = Instantiate(bonus, randomSpawnPosition, Quaternion.identity) as GameObject;
             newBonus.transform.SetParent(GameObject.FindGameObjectWithTag("InCanvas").transform, false);
         }
-        if (randNumber == 999)
+        if (randNumber > 990 && randNumber < 992)
         {
             Vector3 randomSpawnPosition = new Vector3(Random.Range(-1 * cWidth / 2 +10 , cWidth / 2 - 10), Random.Range(-1 * cHeight / 2 - 10, cHeight / 2 + 10), -1200);
 

@@ -10,11 +10,9 @@ public class MovingBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*Vector3 pos = transform.position;
-        pos.x = 0.02f;
-        pos.y = 2.57f;
-        pos.z = 5f;
-        transform.position = pos;*/
+        Vector3 pos = transform.position;
+        pos.z = 36f;
+        transform.position = pos;
     }
 
 

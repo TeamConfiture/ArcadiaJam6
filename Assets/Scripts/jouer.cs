@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class jouer : MonoBehaviour
 {
-    
 
     int hauteurFinale = 0 ;
+
 
     public void PushPlay(string NomScene)
     {
@@ -16,7 +16,6 @@ public class jouer : MonoBehaviour
 
     public void PushAuDela(Text texteARecup)
     {
-
         hauteurFinale = int.Parse(texteARecup.text.Substring(0, texteARecup.text.Length - 7));
         if(hauteurFinale < 250)
         {
@@ -27,6 +26,14 @@ public class jouer : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("AuDela2");
         }
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
 }

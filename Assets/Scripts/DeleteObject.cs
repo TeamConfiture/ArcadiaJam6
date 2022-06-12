@@ -18,7 +18,7 @@ public class DeleteObject : MonoBehaviour
         temps += Time.deltaTime;
 
 
-        if (temps > 5)
+        if (temps > 3)
         {
 
             Vector3 newPos = transform.position;

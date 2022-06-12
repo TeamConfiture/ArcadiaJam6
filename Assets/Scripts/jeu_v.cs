@@ -25,8 +25,6 @@ public class jeu_v : MonoBehaviour
     void Update()
     {
 
-        
-
         compteurMetre = compteurMetre + MovingBonusMalus.multiplicateur * Time.deltaTime ;
 
         finalScore = Mathf.FloorToInt(compteurMetre);
@@ -34,8 +32,6 @@ public class jeu_v : MonoBehaviour
         {
             affichageMetres.text = finalScore + " mètres";
         }
-
-
 
 
 

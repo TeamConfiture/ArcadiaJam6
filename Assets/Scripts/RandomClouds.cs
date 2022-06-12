@@ -8,6 +8,7 @@ public class RandomClouds : MonoBehaviour
     public GameObject starS;
     public GameObject starM;
     public GameObject starL;
+    public GameObject[] planets;
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -28,25 +29,35 @@ public class RandomClouds : MonoBehaviour
         if (jeu_v.finalScore > 200)
         {
             float randNumber2 = Random.Range(0, 500);
-            if (randNumber2 > 475)
+            if (randNumber2 > 375)
             {
-                Vector2 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
 
                 Instantiate(starS, randomSpawnPosition, Quaternion.identity);
             }
-            else if (randNumber2 > 365)
+            else if (randNumber2 > 320)
             {
-                Vector2 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
 
                 Instantiate(starM, randomSpawnPosition, Quaternion.identity);
             }
-            else if (randNumber2 > 362)
+            else if (randNumber2 > 310)
             {
-                Vector2 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 37);
 
                 Instantiate(starL, randomSpawnPosition, Quaternion.identity);
             }
+
+            float randNumber3 = Random.Range(0, 1000);
+            if (randNumber3 == 42)
+            {
+                int randomIndex = Random.Range(0, planets.Length);
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(-15, 11), 7, 38);
+
+                Instantiate(planets[randomIndex], randomSpawnPosition, Quaternion.identity);
+            }
         }
+
 
 
     }

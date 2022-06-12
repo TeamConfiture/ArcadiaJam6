@@ -26,7 +26,7 @@ public class MovingBonusMalus : MonoBehaviour
         nom = nom.Substring(0, 5);
         if (nom == "Bonus")
         {
-            multiplicateur = multiplicateur * 1.5f;
+            multiplicateur = multiplicateur * 1.2f;
         }
         else if (nom == "Malus")
         {
