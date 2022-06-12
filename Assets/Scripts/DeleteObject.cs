@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingClouds : MonoBehaviour
+public class DeleteObject : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -10,17 +10,22 @@ public class MovingClouds : MonoBehaviour
         
     }
 
+    private float temps;
+
     // Update is called once per frame
     void Update()
     {
+        temps += Time.deltaTime;
 
-        float mult = MovingBonusMalus.multiplicateur;
 
-        Vector2 new_pos = transform.position;
-        new_pos.y -= Time.deltaTime * mult;
-        new_pos.x += Time.deltaTime * 0.3f;
-        transform.position = new_pos;
-        //Penser à les supp quand non visible
+        if (temps > 5)
+        {
+
+            Vector3 newPos = transform.position;
+            newPos.x = 15;
+            newPos.y = 15;
+            transform.position = newPos;
+        }
     }
 
     void OnBecameInvisible()

@@ -15,14 +15,15 @@ public class MovingSky : MonoBehaviour
         transform.position = pos;
     }
 
+    float mult;
     // Update is called once per frame
     void Update()
     {
 
-        float mult = 2f;
-
+        mult = MovingBonusMalus.multiplicateur;
         Vector3 new_pos = transform.position;
         new_pos.y -= Time.deltaTime * 0.2f * mult;
         transform.position = new_pos;
     }
+
 }

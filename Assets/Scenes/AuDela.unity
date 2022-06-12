@@ -361,12 +361,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 454558760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c557cbc939bde4f881d9d006a6205c, type: 3}
+  m_Script: {fileID: 11500000, guid: bd5b869be4434df43802c89892d6e798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affichageMetres: {fileID: 0}
-  compteurMetre: 0
-  multiplicateur: 2
+  zoneTexte: {fileID: 454558762}
 --- !u!224 &659120882 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1483367713323140964, guid: e8d5df6415306684eb18a06a0f75d815, type: 3}

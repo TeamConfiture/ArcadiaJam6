@@ -21,7 +21,7 @@ public class RandomObjectSpawner : MonoBehaviour
     void Update()
     {
         float randNumber = Random.Range(0, 2000);
-        if (randNumber == 997)
+        if (randNumber == 997 ||randNumber == 998)
         {
             Vector3 randomSpawnPosition = new Vector3(Random.Range(-1*cWidth/2 +10 , cWidth/2 -10), Random.Range(-1 * cHeight / 2 -10, cHeight / 2 +10), -1200);
 

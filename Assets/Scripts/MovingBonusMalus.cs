@@ -8,58 +8,35 @@ public class MovingBonusMalus : MonoBehaviour
 {
 
 
+    public string nom = "";
+    public static float multiplicateur = 2f;
 
-    private float temps = 0;
-
-
-    /*public Camera cam = Camera.main;
-    private float cHeight;
-    private float cWidth;*/
-
+    //public GameObject EnvoyerMessage;
 
     public EventSystem mySystem;
 
-    void Start()
-    {
-        //cHeight = 2f * cam.orthographicSize;
-        //cWidth = cHeight * cam.aspect;
-    }
-
     
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        temps = +Time.deltaTime;
-
-
-        if (temps > 5 )
-        {
-            Destroy(this.gameObject);
-            Vector2 newPos = transform.position;
-            newPos.x = 15;
-            newPos.y = 15;
-            transform.position = newPos;
-        }
-    }
 
     public void TestDestroy()
     {
-        Debug.Log("Clique");
-        if (mySystem.currentSelectedGameObject.name == "Bonus(Clone)")
-        {
-            
-        }
-        else
-        {
 
+        nom = mySystem.currentSelectedGameObject.name;
+
+        nom = nom.Substring(0, 5);
+        if (nom == "Bonus")
+        {
+            multiplicateur = multiplicateur * 1.5f;
         }
+        else if (nom == "Malus")
+        {
+            multiplicateur = multiplicateur * 0.8f;
+        }
+
         Destroy(mySystem.currentSelectedGameObject);
     }
     void OnBecameInvisible()
     {
         Destroy(this.gameObject);
     }
-
 }
